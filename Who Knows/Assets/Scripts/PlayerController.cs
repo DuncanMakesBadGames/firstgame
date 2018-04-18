@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-	public float TurnSpeed = 1;
+	public float TurnSpeed;
+	public float MSpeed;
 
 	// Use this for initialization
 	void Start () {
@@ -18,6 +19,12 @@ public class PlayerController : MonoBehaviour {
 		}
 		if (Input.GetKey(KeyCode.D)){
 			transform.Rotate (Vector3.forward * -TurnSpeed);
+		}
+		if (Input.GetKey (KeyCode.W)) {
+			transform.Translate (0, MSpeed, 0);
+		}
+		if (Input.GetKey (KeyCode.S)) {
+			transform.Translate (0, -MSpeed, 0);
 		}
 	}
 }
