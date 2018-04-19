@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour {
 	public float TurnSpeed;
 	public float MSpeed;
 	public float BackwardsMultiplier;
+	public Rigidbody2D rb;
 
 	// Use this for initialization
 	void Start () {
@@ -22,10 +23,10 @@ public class PlayerController : MonoBehaviour {
 			transform.Rotate (Vector3.forward * -TurnSpeed);
 		}
 		if (Input.GetKey (KeyCode.W)) {
-			transform.Translate (0, MSpeed, 0);
+			rb.AddRelativeForce(Vector2.up * MSpeed);
 		}
 		if (Input.GetKey (KeyCode.S)) {
-			transform.Translate (0, -MSpeed * BackwardsMultiplier, 0);
+			rb.AddRelativeForce(Vector2.up * -MSpeed * BackwardsMultiplier);
 		}
 	}
 }

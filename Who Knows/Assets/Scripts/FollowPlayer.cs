@@ -14,14 +14,17 @@ public class FollowPlayer : MonoBehaviour {
 		float ScrollWheel = Input.GetAxis ("Mouse ScrollWheel");
 
 		if(ScrollWheel < 0){
-			UnityEngine.Camera.main.orthographicSize += 0.1f * UnityEngine.Camera.main.orthographicSize;
+			UnityEngine.Camera.main.orthographicSize += 0.5f;
 		}
 		if(ScrollWheel > 0){
-			UnityEngine.Camera.main.orthographicSize -= 0.1f * UnityEngine.Camera.main.orthographicSize;
+			UnityEngine.Camera.main.orthographicSize -= 0.5f;
 		}
 
 		if (UnityEngine.Camera.main.orthographicSize < 0.5f) {
 			UnityEngine.Camera.main.orthographicSize = 0.5f;
+		}
+		if (UnityEngine.Camera.main.orthographicSize > 16.0f) {
+			UnityEngine.Camera.main.orthographicSize = 16.0f;
 		}
 		if (Input.GetMouseButtonDown (2)) {
 			UnityEngine.Camera.main.orthographicSize = 8.0f;
