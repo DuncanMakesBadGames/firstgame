@@ -201,6 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TurnSpeed: 1.5
   MSpeed: 0.05
+  BackwardsMultiplier: 0.6
 --- !u!1 &1592789755
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,6 +288,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aimspeed: 150
+  Boollet: {fileID: 1835819087045474, guid: e8bb33e6ac47b5a4f93b638283134a53, type: 2}
+  ShootCooldown: 2
 --- !u!1 &1792969398
 GameObject:
   m_ObjectHideFlags: 0

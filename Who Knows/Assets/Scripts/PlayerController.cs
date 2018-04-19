@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour {
 
 	public float TurnSpeed;
 	public float MSpeed;
+	public float BackwardsMultiplier;
 
 	// Use this for initialization
 	void Start () {
@@ -24,7 +25,7 @@ public class PlayerController : MonoBehaviour {
 			transform.Translate (0, MSpeed, 0);
 		}
 		if (Input.GetKey (KeyCode.S)) {
-			transform.Translate (0, -MSpeed, 0);
+			transform.Translate (0, -MSpeed * BackwardsMultiplier, 0);
 		}
 	}
 }
