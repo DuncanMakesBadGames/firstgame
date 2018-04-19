@@ -19,4 +19,10 @@ public class BoolletMovement : MonoBehaviour {
 
 		
 	}
+
+	void OnCollisionEnter (Collision col)
+	{
+		Destroy(gameObject,0);
+	}
+
 }
