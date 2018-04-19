@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 227538467}
   - component: {fileID: 227538469}
   - component: {fileID: 227538470}
+  - component: {fileID: 227538471}
   m_Layer: 0
   m_Name: Circle of life
   m_TagString: Untagged
@@ -182,7 +183,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 227538466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.64, y: 3, z: -0.05}
+  m_LocalPosition: {x: 7.36, y: 3.61, z: -0.05}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
@@ -223,6 +224,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.09
+--- !u!114 &227538471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 227538466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04b2c011513cd2344a43d1f14bb495ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Boom: {fileID: 1361105627994732, guid: 089175b5b3114244cadbbc4ad062158d, type: 2}
 --- !u!1 &1002015749
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,6 +383,7 @@ GameObject:
   - component: {fileID: 1592789756}
   - component: {fileID: 1592789757}
   - component: {fileID: 1592789758}
+  - component: {fileID: 1592789759}
   m_Layer: 0
   m_Name: TankNose
   m_TagString: Untagged
@@ -448,6 +462,86 @@ MonoBehaviour:
   aimspeed: 150
   Boollet: {fileID: 1835819087045474, guid: e8bb33e6ac47b5a4f93b638283134a53, type: 2}
   ShootCooldown: 2
+--- !u!82 &1592789759
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1592789755}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: dc476f97c48a229479cf3f656e095721, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1792969398
 GameObject:
   m_ObjectHideFlags: 0
